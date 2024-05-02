@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+.nav-custom-header{
+    background: rgb(168,134,214);
+    background: linear-gradient(90deg, rgba(168,134,214,1) 0%, rgba(172,50,167,1) 35%, rgba(216,143,182,1) 100%);
+}
+.customIconHome{
+    border: solid 1px white;
+    background-color: #c2aae2;
+    padding: 10px 14px !important;
+    border-radius: 0.20rem;
+}
+.customIconUser{
+    border: solid 1px white;
+    background-color: #c2aae2;
+    padding: 7px 14px !important;
+    border-radius: 50%;
+}
+.nav-item .search {
+    background-color: #c2aae2;
+    color: white;
+    height: 46px;
+    border: solid 1px white;
+}
+.navbar-brand img{
+    height: 35px;
+}
+.custom-button{
+    background-color: #c2aae2;
+    color: white;
+    border: none;
+    border-radius: 0.20rem;
+    padding: 10px 20px;
+}
+.customFont{
+    color: white;
+}
+.customStar{
+    color: #f1b130;
+    background-color: #c2aae2;
+    border-radius: 0.20rem;
+    color: #f1b130;
+    padding: 3px 12px;
+    font-size: 25px;
+}
+.customText{
+    color: #f1b130;
+    background-color: #c2aae2;
+    border-radius: 0.20rem;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 19px;
+}
+.customTextProfile{
+    border-radius: 1.3rem;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 19px;
+    background-color: #c2aae2;
+}
+.line{
+    margin-left: 10px;
+    font-size: 25px;
+    color: #9a50a8;
+}
+.imgCustom{
+    height: 42px;
+    margin-left: 10px;
+    z-index: 1000;
+}
+.imgCustom2{
+    height: 42px;
+    margin-left: -10px;
+  
+}
