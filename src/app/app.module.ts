@@ -12,6 +12,7 @@ import { BoardComponent } from './board/board.component';
 import { AddEditCardComponent } from './add-edit-card/add-edit-card.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { CardService } from './card.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatSelectModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent],
   entryComponents: [AddEditCardComponent]
 })

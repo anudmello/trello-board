@@ -72,3 +72,31 @@
     margin-left: -10px;
   
 }
+.deleteIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 900;
+    color: red;
+    cursor: pointer;
+}
+.customlist{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 900;
+    color: #6d798eed;
+    cursor: pointer;
+}
+.customOpen{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    font-weight: 400;
+    color: #6d798e;
+    cursor: pointer;
+    font-size: 30px;
+}
+.card{
+    padding-bottom: 40px;
+}

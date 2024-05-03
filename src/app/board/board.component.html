@@ -57,5 +57,28 @@
   </div>
 </div>
 
+<div class="container mt-4">
+  <div class="row">
+    <div class="col" *ngFor="let column of columns" cdkDropList (cdkDropListDropped)="onDrop($event, column)">
+      <div class="card mb-3">
+        <div class="card-header">{{ column.name }}</div>
+        <div class="card-body">
+          <div *ngFor="let card of column.cards" class="card mb-2" cdkDrag>
+            <div class="card-body">
+              <h5 class="card-title">{{ card.title }}</h5>
+              <p class="card-text">{{ card.description }}</p>
+              <span class="deleteIcon" (click)="deleteCard(column, card)">x</span>
+            </div>
+          </div>
+        </div>
+        <span class="customlist">...</span>
+        <span class="customOpen" (click)="openAddCardModal()">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 </section>
