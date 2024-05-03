@@ -13,6 +13,7 @@ import { AddEditCardComponent } from './add-edit-card/add-edit-card.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { CardService } from './card.service';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CardService } from './card.service';
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DragDropModule
   ],
   providers: [CardService],
   bootstrap: [AppComponent],

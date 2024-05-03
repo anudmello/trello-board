@@ -51,16 +51,20 @@ export class BoardComponent {
     }
   }
 
-  onDrop(event: CdkDragDrop<any[]>, column: any): void {
+  onDrop(event: CdkDragDrop<any>): void {
+    const previousIndex = event.previousIndex;
+    const currentIndex = event.currentIndex;
+
     if (event.previousContainer === event.container) {
-      moveItemInArray(column.cards, event.previousIndex, event.currentIndex);
+      moveItemInArray(event.container.data, previousIndex, currentIndex);
     } else {
-      const previousColumn = this.columns.find(col => col.cards === event.previousContainer.data);
-      if (previousColumn) {
-        previousColumn.cards.splice(event.previousIndex, 1);
-      }
-      column.cards.splice(event.currentIndex, 0, event.previousContainer.data[event.previousIndex]);
+      const item = event.previousContainer.data[previousIndex];
+      event.previousContainer.data.splice(previousIndex, 1);
+      event.container.data.splice(currentIndex, 0, item);
     }
+  }
+  private findColumn(columnId: string): any {
+    return this.columns.find(col => col.name.toLowerCase().replace(' ', '-') === columnId);
   }
   handleAddCard(newCard: any): void {
     console.log('New Card:', newCard); 
